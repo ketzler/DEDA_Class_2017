@@ -1,0 +1,5 @@
+Name of Quantlet : DEDA_Class_2017_WebScraping
+Published in : Digital Economy and Decision Analytics
+Description : Demonstrate how to scrape different type of web pages in Python
+Keywords : Python, Teaching, Web Scraping, RSS, Json, XML
+Author : Cathy YH Chen, Junjie Hu

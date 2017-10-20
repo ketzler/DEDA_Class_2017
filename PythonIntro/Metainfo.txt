@@ -1,0 +1,16 @@
+Name of Quantlet : Intro of Python
+Published in : Digital Economy and Decision Analytics
+Description : Introduce basic syntax and basic data structure of Python
+Keywords : Python, Teaching, Data Science, Economy, Decision
+Author : Junjie Hu
+
+
+
+
+
+
+
+
+
+
+

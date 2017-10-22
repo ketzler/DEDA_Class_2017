@@ -61,9 +61,7 @@ name = 'Jon'
 # using format method
 welcome_jon = '{}, {}. '.format(greeting, name.upper()) + welcome_sentence
 # using f string, you can write variable name into brackets, directly.
-welcome_jon_f = f'{greeting}, {name.upper()}. '+ welcome_sentence
-
-
+welcome_jon_f = f'{greeting}, {name.upper()}. ' + welcome_sentence
 
 """
 tuple and set
@@ -88,8 +86,6 @@ count_1_diff = countries_1.difference(countries_2)  # {'China', 'Japan', 'Korea'
 count_2_diff = countries_2.difference(countries_1)  # {'France', 'Germany', 'Italy', 'Spain', 'UK'}
 countries_new = countries_1.union(countries_2)  # merge two sets into 1 and without duplicates
 
-
-
 """
 list
 """
@@ -109,7 +105,6 @@ natr_language.append('Spanish')  # ['English', 'German', 'Chinese', 'Spanish']
 
 # insert() allows you to add 1 element at arbitrary place
 prog_language.insert(0, 'Python')  # ['Python', 'C++', 'Java', 'C#']
-
 
 # extend() allows you to add multiple elements at the end of the list
 python = ['python 2.7', 'python 3.6']
@@ -133,7 +128,7 @@ sorted_number = sorted(numbers)  # sorted function can return a new list instead
 min_num = min(numbers)  # 11
 max_num = max(numbers)  # 95
 sum_num = sum(numbers)  # 203
-index_num = numbers.index(32)   # 2
+index_num = numbers.index(32)  # 2
 
 # iterate in list
 for lang in prog_language:
@@ -146,7 +141,6 @@ for num, lang in enumerate(natr_language):
 natr_language_str = ', '.join(natr_language)  # 'Spanish, Japanese, German, English, Chinese'
 natr_language_new = natr_language_str.split(', ')  # ['Spanish', 'Japanese', 'German', 'English', 'Chinese']
 
-
 # looping in the list. The basic syntax is:
 # [func(ele) for func(ele) in a_list if func(ele)]
 # For example:
@@ -154,8 +148,6 @@ people = [language + ' People' for language in natr_language_new if language.end
 # format number in list to 2 digit
 num_seq = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 num_seq_db = [format(num, '02d') for num in num_seq]
-
-
 
 """
 Dictionary

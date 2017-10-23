@@ -1,3 +1,31 @@
+
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
+
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **Digital Economy and Decision Analytics** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
+
+```yawl
+
+Name of Quantlet : DEDA_Class_2017_Python_Introduction
+
+Published in : Digital Economy and Decision Analytics
+
+Description : Introduce basic syntax for operations, numeric and string, and basic data structure, list, tuple, set and dict in Python
+
+Keywords : n
+- Python
+- Teaching
+- Data Science
+- Economy
+- Decision
+
+Author : Junjie Hu
+
+```
+
+### Python Code:
+```python
+
+
 """
 Python Basic Syntax and Data Structure Introduction
 """
@@ -181,3 +209,7 @@ profile.update({'birth': '01-10-2001', 'tel': '123-312'})
 # loop with key and vlaue
 for key, value in profile.items():
     print(f'{key}: {value}')
+
+
+```
+

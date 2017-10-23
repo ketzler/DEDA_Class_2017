@@ -3,7 +3,7 @@
 
 ## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **Digital Economy and Decision Analytics** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
-```yawl
+```yaml
 
 Name of Quantlet : DEDA_Class_2017_Python_Introduction
 
@@ -11,7 +11,7 @@ Published in : Digital Economy and Decision Analytics
 
 Description : Introduce basic syntax for operations, numeric and string, and basic data structure, list, tuple, set and dict in Python
 
-Keywords : n
+Keywords :
 - Python
 - Teaching
 - Data Science
@@ -38,7 +38,7 @@ try basic operations:
 +, -, *, /, %, **, //
 """
 
-a = 5
+a like = 5
 b = 3
 a *= 2  # 10
 round(a / b, 4)  # 3.3333

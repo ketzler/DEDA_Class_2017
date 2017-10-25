@@ -22,6 +22,17 @@ Author : Junjie Hu
 
 ```
 
+### Python Installation Guide
+You can choose downloading python from the [Official Website](https://www.python.org/):
+
+For Mac user, You can also download it from the terminal using the [homebrew](https://brew.sh/).
+
+After installation of `homebrew`, type in the terminal:
+
+`brew install python3`
+
+
+
 ### Python Code:
 ```python
 
@@ -38,7 +49,7 @@ try basic operations:
 +, -, *, /, %, **, //
 """
 
-a like = 5
+a = 5
 b = 3
 a *= 2  # 10
 round(a / b, 4)  # 3.3333

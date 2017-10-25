@@ -6,9 +6,6 @@ Introducing the Condition and Iteration in Python
 Condition
 """
 
-# and or not is(not ==, using id() to check the memory address),
-# values were evaluated as False, False, None, 0, empty sequence '', "", (), [], {}
-
 # if() takes 1 argument to evaluate if the argument is True or False
 bool_seq = [True, False, 0, 1, -1, 100, '', (), [], {}, [False], [True]]
 # False, 0, empty sequence will be evaluated as False
@@ -27,7 +24,7 @@ print(False and False)  # False
 print(False or False)  # False
 
 # operator "is" is not "=="
-# "is" to evaluate if two 2 variables pointed to the same object, "==" to evaluate the equivalence of 2 variables
+# "is" is used to evaluate if two 2 variables pointed to the same object, "==" is used to evaluate the equivalence of 2 variables
 bool_seq_diff = [True, False, 0, 1, -1, 100, '', (), [], {}, [False], [True]]
 print(bool_seq == bool_seq_diff)  # True
 print(bool_seq is bool_seq_diff)  # False

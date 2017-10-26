@@ -30,9 +30,6 @@ Introducing the Condition and Iteration in Python
 Condition
 """
 
-# and or not is(not ==, using id() to check the memory address),
-# values were evaluated as False, False, None, 0, empty sequence '', "", (), [], {}
-
 # if() takes 1 argument to evaluate if the argument is True or False
 bool_seq = [True, False, 0, 1, -1, 100, '', (), [], {}, [False], [True]]
 # False, 0, empty sequence will be evaluated as False

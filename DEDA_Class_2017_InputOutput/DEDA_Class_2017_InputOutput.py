@@ -17,14 +17,15 @@ os.chdir(path_direct + '/DEDA_Class_2017_InputOutput')
 # os module allows you to connect with your operation system
 # You can check, create, delete, rename your files and directories
 # Hint: path.exists(), listdir(), mkdir(), makedirs(), remove(), removedirs(), rename(), walk()
-
 # Give the package an alias
 import numpy as np
 np.power(2, 10)  # 1024
 
 # Instead of importing whole package, import only 1 method in the package
-from datetime import datetime
-datetime.now()
+from pandas import DataFrame
+some_info = {'name': ['Alice', 'Bob', 'Clark', 'Douglas'],
+            'age': [5, 10, 3, 22]}
+df = DataFrame(some_info)
 
 
 """
@@ -75,8 +76,8 @@ with open('temp.pkl', 'wb') as temp_file:
 Input and output structured data
 """
 import pandas as pd
-# Pandas supports most of the common structured data formats, let's take .csv format as an example
-# The read_csv method can take more arguments to satisfy you
+# Pandas supports most of the common structured data formats
+# The read_csv method can take more arguments to satisfy your need
 # For example, you can specify the delimiter and decimal style
 # further more see: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html
 apple_stock = pd.read_csv('AAPL.csv', index_col='date', parse_dates=True)
@@ -88,8 +89,4 @@ apple_stock_2013 = apple_stock.loc[apple_stock.index.year == 2013, ['low', 'high
 
 # Save the new data as json format
 apple_stock_2013.to_json('AAPL_2013.json')
-
-
-
-
-
+apple_stock_2013.to_csv('test.csv')

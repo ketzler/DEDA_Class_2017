@@ -62,7 +62,7 @@ print(bool_seq_same)
 
 # what if I want to create different object but don't want to copy the values manually?
 # The answer is deep copy, different data structure may provide different methods.
-# Further tutorial: https://docs.python.org/3/library/copy.html
+# Further more see: https://docs.python.org/3/library/copy.html
 bool_seq_2 = bool_seq.copy()
 print(bool_seq_2 is bool_seq)  # False
 

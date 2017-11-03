@@ -1,0 +1,12 @@
+Name of Quantlet : DEDA_Class_2017_WebScrapingIntro
+Published in : Digital Economy and Decision Analytics
+Description : Demonstrate getting data from webpage API and scraping news information from nasdaq.com
+Keywords :
+- Python
+- Teaching
+- Web Data
+- RSS
+- Json
+- HTML
+- BeautifulSoup
+Author : Junjie Hu, Cathy YH Chen

@@ -56,7 +56,8 @@ def nasdaq_news_scraping(page=1, refresh=False):
             print(tag)
     return title_list_page, time_list_page, link_list_page, tag_list_page
 
-direct = os.getcwd() + '/DEDA_Class_2017_WebScrapingIntro'
+# direct = os.getcwd() + '/DEDA_Class_2017_WebScrapingIntro'
+direct = os.getcwd()
 
 title_list = []
 time_list = []

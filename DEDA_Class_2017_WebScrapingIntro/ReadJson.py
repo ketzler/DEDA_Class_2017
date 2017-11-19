@@ -12,13 +12,11 @@ Last modified date: 19-11-2017
 
 import requests
 import json
+import pprint
 
 response = requests.get("http://data.ntpc.gov.tw/api/v1/rest/datastore/382000000A-000352-001")
 content = response.content
 json_tree = json.loads(content)
-
-import pprint
-
 pprint.pprint(json_tree)
 
 for bike_rent_records in json_tree["result"]["records"]:

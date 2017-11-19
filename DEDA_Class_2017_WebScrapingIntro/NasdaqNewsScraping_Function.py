@@ -1,9 +1,26 @@
+"""
+Description:
+ - Scraping multiple pages of news from nasdaq.com.
+ - Saving result it as .csv file at local disk.
+ - Saving web page source code temporarily after request.
+
+Usage: Executing this whole file in your IDE or from Terminal.
+
+Memo:
+Adjusting range(start, end) to define how many pages you want to scrape
+Toggling refresh to decide if you want to refresh the pages that have been stored locally.
+
+Author: Junjie Hu, hujunjie@hu-berlin.de
+Last modified date: 19-11-2017
+"""
+
 from bs4 import BeautifulSoup as soup
 import requests
 import datetime
 import os
 import pandas as pd
 import pickle
+
 
 def nasdaq_news_scraping(page=1, refresh=False):
     # Argument page equals 1 by default
@@ -34,7 +51,7 @@ def nasdaq_news_scraping(page=1, refresh=False):
     tag_list_page = []
 
     for container in containers:
-        container_a = container.find_all('a', {"id":"two_column_main_content_la1_rptArticles_hlArticleLink_0"})
+        container_a = container.find_all('a', {"id": "two_column_main_content_la1_rptArticles_hlArticleLink_0"})
         for item in container_a:
             news_link = item.get('href').strip()
             news_title = item.text.strip()
@@ -56,15 +73,16 @@ def nasdaq_news_scraping(page=1, refresh=False):
             print(tag)
     return title_list_page, time_list_page, link_list_page, tag_list_page
 
-# direct = os.getcwd() + '/DEDA_Class_2017_WebScrapingIntro'
+
 direct = os.getcwd()
+# direct = os.getcwd() + '/DEDA_Class_2017_WebScrapingIntro'
 
 title_list = []
 time_list = []
 link_list = []
 tag_list = []
 
-for page_num in range(1,10):
+for page_num in range(1, 10):
     print("\nThis is Page: ", page_num)
     # Using the function defined previously with certain arguments as input
     nasdaq_news_page = nasdaq_news_scraping(page=page_num, refresh=False)
@@ -75,6 +93,5 @@ for page_num in range(1,10):
 
 nasdaq_info = zip(title_list, time_list, link_list, tag_list)
 nasdaq_info_df = pd.DataFrame(list(nasdaq_info), columns=['title', 'time', 'link', 'tag'])
+print(os.getcwd())
 nasdaq_info_df.to_csv(direct + '/Nasdaq_News_MultiPages.csv')
-
-

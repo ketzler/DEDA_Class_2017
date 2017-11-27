@@ -12,7 +12,6 @@ Toggling refresh to decide if you want to refresh the pages that have been store
 Author: Junjie Hu, hujunjie@hu-berlin.de
 Last modified date: 19-11-2017
 """
-
 import requests
 from bs4 import BeautifulSoup as soup
 import datetime

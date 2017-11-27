@@ -49,4 +49,4 @@ print("Is stu_1 an instance of Student: ", isinstance(stu_1, Student))
 # Using the attributes in the object stu_1
 print(stu_1.school)
 # Using the methods in the object stu_1
-print(stu_1.describe())
+stu_1.describe()

@@ -1,5 +1,6 @@
 .vscode/
 .idea/
-DEDA_Class_2017_Statistics&Finance/LinearRegression.py
-DEDA_Class_2017_Statistics&Finance/TimeSeriesData.py
-DEDA_Class_2017_Statistics&Finance/TimeSeriesPlot.py
+/DEDA_Class_2017_Statistics&Finance/LinearRegression.py
+/DEDA_Class_2017_Statistics&Finance/TimeSeriesData.py
+/DEDA_Class_2017_Statistics&Finance/TimeSeriesPlot.py
+/DEDA_Class_2017_Statistics&Finance/FF_3Factor_Benchmark.txt

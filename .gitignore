@@ -1,3 +1,5 @@
+.vscode/
 .idea/
-.DS_Store
-DEDA_Class_2017_TimeSeriesAnalysis/
+DEDA_Class_2017_Statistics&Finance/LinearRegression.py
+DEDA_Class_2017_Statistics&Finance/TimeSeriesData.py
+DEDA_Class_2017_Statistics&Finance/TimeSeriesPlot.py

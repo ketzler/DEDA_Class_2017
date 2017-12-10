@@ -12,4 +12,3 @@ trading_data = pd.DataFrame({symbol: firm_data(symbol) for symbol in firms})
 # Log return calculation
 log_return = np.log(trading_data / trading_data.shift(1))
 log_return.dropna(inplace=True)
-#

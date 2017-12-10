@@ -38,7 +38,7 @@ else:
         url_request = pickle.load(url_file)
 
 url_request = requests.get(nasdaq_url)
-url_content = url_request.content
+url>_content = url_request.content
 # Using BeautifulSoup to parse webpage source code
 parsed_content = soup(url_content)
 # Finding all the <p> tag content
@@ -75,4 +75,4 @@ for container in containers:
         tag_list.append(tag)
 nasdaq_info = zip(title_list, time_list, link_list, tag_list)
 nasdaq_info_df = pd.DataFrame(list(nasdaq_info), columns=['title', 'time', 'link', 'tag'])
-nasdaq_info_df.to_csv(os.getcwd() + '/DEDA_Class_2017_WebScrapingIntro/Nasdaq_News.csv')
+nasdaq_info_df.to_csv(os.getcwd() + '/Nasdaq_News_2.csv')

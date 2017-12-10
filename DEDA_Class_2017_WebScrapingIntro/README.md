@@ -19,7 +19,7 @@ Keywords :
 - HTML
 - BeautifulSoup
 - OOP
-Author : Junjie Hu, Cathy YH Chen 
+Author : Junjie Hu, Cathy YH Chen, Roméo Després 
 
 ```
 

@@ -5,15 +5,6 @@ import statsmodels.tsa.api as smt
 import scipy.stats as scs
 import numpy as np
 
-np.random.seed(1)
-
-# plot of discrete white noise
-rand_series = np.random.normal(size=1000)
-y_axis = trading_data['AAPL']
-
-aapl_analysis = TimesSeriesAnalysis(log_return['AAPL'])
-aapl_analysis.plot_ts(lags=30)
-
 
 class TimesSeriesAnalysis():
     def __init__(self, data):
@@ -42,3 +33,15 @@ class TimesSeriesAnalysis():
 
             plt.tight_layout()
         return fig
+
+
+
+np.random.seed(1)
+
+# plot of discrete white noise
+rand_series = np.random.normal(size=1000)
+y_axis = trading_data['AAPL']
+
+aapl_analysis = TimesSeriesAnalysis(log_return['AAPL'])
+aapl_analysis.plot_ts(lags=30)
+

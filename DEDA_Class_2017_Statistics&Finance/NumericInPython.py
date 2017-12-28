@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 
 fig = plt.figure()  # Create a window to draw
 ax = plt.axes()  # Create axes
-ax.plot(A, 'o')  # Plot the dots, using circle
+ax.plot(np.arange(1, 21), A, 'mu')  # Plot the dots, using circle
 ax.set_title('Random Number Plotting')  # Set figure title
 plt.show()
 # Save figure to a high quality
@@ -76,4 +76,4 @@ fft_transformed = ifft(fft_transformed)
 fft_transformed = np.int8(np.real(fft_transformed))
 # Output the image
 image_output = Image.frombytes(image_before.mode, image_before.size, fft_transformed)
-image_output.draw()
+image_output.show()

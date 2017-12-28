@@ -15,7 +15,7 @@ norm_cdf = ss.norm.cdf(x, **parameters)
 
 # Plot the cdf and pdf in 1 figure
 figsize = (10, 8)
-fig = plt.figure(figsize=figsize)
+plt.figure(figsize=figsize)
 # upper plot is pdf
 plt.subplot(2, 1, 1)  # (rows, columns, which one)
 plt.plot(x, norm_pdf, '-', alpha=1)
